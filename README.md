@@ -48,6 +48,7 @@ npm run dev
 
 ## Folder Structure
 
+- `src/`: Contains and wraps all the other files and folders like app/ and conponents/.
 - `app/`: Contains Next.js page components for different routes.
 - `components/`: Contains reusable UI components used throughout the application.
 
