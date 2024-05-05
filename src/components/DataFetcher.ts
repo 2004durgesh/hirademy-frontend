@@ -1,4 +1,5 @@
 const fetchData = async (url: string) => {
+    // await new Promise(resolve => setTimeout(resolve, 5000));
     try {
         const res = await fetch(url, {
             next: { revalidate: 3600 },

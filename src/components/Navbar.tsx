@@ -3,6 +3,8 @@ import React from 'react'
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTrigger } from "@/components/ui/sheet"
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { Menu } from 'lucide-react'
+
 
 const Navbar = () => {
     const pathname = usePathname()
@@ -38,7 +40,9 @@ const Navbar = () => {
             </ul>
             <div className='block sm:hidden'>
                 <Sheet>
-                    <SheetTrigger>Open</SheetTrigger>
+                    <SheetTrigger>
+                        <Menu />
+                    </SheetTrigger>
                     <SheetContent>
                         <SheetHeader>
                             <h1 className='font-black text-xl md:text-3xl lg:text-5xl'>BOOKS</h1>
